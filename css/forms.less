@@ -1,0 +1,55 @@
+textarea {
+  resize: vertical;
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  outline: none;
+  background: @green;
+  color: #fff;
+  padding: 11px 30px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid darken(@grey, 10%);
+  &::-webkit-input-placeholder {
+	color: darken(@grey, 20%);
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+  &:checked ~ label {
+	&:after {
+	  border-left-color: @green;
+	  border-bottom-color: @green;
+	  border-top: none;
+	  border-right: none;
+	  transform: rotate(-38deg) translateY(-4px);
+	  .size(17px, 21px);
+	}
+  }
+}
+
+label {
+  position: relative;
+  padding-left: 25px;
+  &:after {
+	content: '';
+	position: absolute;
+	.square(20px);
+	border: 2px solid darken(@grey, 30%);
+	cursor: pointer;
+	transition: all .4s;
+	left: 0;
+  }
+}

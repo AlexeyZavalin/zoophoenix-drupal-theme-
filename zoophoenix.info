@@ -1,0 +1,12 @@
+name = Zoophoenix
+description = Специальная тема Зоофеникс
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = plugins/swiper/css/swiper.min.css
+stylesheets[all][] = css/style.less
+
+scripts[] = plugins/swiper/js/swiper.min.js
+scripts[] = js/script.js
+regions[content] = Содержимое
