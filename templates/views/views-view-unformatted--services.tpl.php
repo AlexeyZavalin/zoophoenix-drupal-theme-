@@ -12,11 +12,11 @@
 		<h2><?php print $title; ?></h2>
 	</div>
 <?php endif; ?>
-<?php $cols = array_chunk($rows, 4, TRUE); ?>
+<?php $cols = array_chunk($rows, 2, TRUE); ?>
 <?php foreach ($cols as $col): ?>
 	<div class="row">
 		<?php foreach ($col as $id => $row): ?>
-			<div class="col-md-6 col-sm-12 col-lg-6">
+			<div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
 				<?php print $row; ?>
 			</div>
 		<?php endforeach; ?>

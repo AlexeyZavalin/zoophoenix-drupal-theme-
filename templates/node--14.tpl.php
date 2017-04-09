@@ -79,20 +79,10 @@
  *
  * @ingroup themeable
  */
-$field = field_get_items ('node', $node, 'field_accessories_img');
-$accessories_image_display = array(
-	'type' => 'image',
-	'settings' => array(
-		'image_style' => '16_9'
-	)
-);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-	<div class="text">
-		<?php
-		$field_accessories_body = field_get_items ('node', $node, 'body');
-		$output = field_view_value ('node', $node, 'body', $field_accessories_body[0]);
-		print render ($output);
-		?>
-	</div>
+	<?php
+	$block = module_invoke ('webform', 'block_view', 'client-block-15');
+	echo render ($block['content']);
+	?>
 </div>

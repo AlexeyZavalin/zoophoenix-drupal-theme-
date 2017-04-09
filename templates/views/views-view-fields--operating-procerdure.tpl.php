@@ -27,10 +27,12 @@
 
 <?php if (!empty($fields['field_procedure_number']->content)): ?>
 	<div class="op-item">
-		<h2 class="opi-title">
+		<div class="opi-head">
 			<span class="opi-order"><?php print $fields['field_procedure_number']->content; ?></span>
-			<?php print $fields['field_procedure_title']->content; ?>
-		</h2>
+			<h2 class="opi-title">
+				<?php print $fields['field_procedure_title']->content; ?>
+			</h2>
+		</div>
 		<div class="opi-desc">
 			<?php print $fields['field_procedure_body']->content; ?>
 		</div>

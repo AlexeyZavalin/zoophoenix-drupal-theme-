@@ -53,8 +53,6 @@
 	<?php print $styles; ?>
 	<?php print $scripts; ?>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script src='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
-	<link href='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes; ?>">
 <?php print $page_top; ?>

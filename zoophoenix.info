@@ -5,8 +5,14 @@ version = VERSION
 core = 7.x
 
 stylesheets[all][] = plugins/swiper/css/swiper.min.css
+stylesheets[all][] = plugins/remodal/remodal.css
+stylesheets[all][] = plugins/remodal/remodal-default-theme.css
 stylesheets[all][] = css/style.less
 
 scripts[] = plugins/swiper/js/swiper.min.js
+scripts[] = plugins/remodal/remodal.min.js
+scripts[] = plugins/inputmask/jquery.inputmask.js
+scripts[] = plugins/jquery.validate.min.js
 scripts[] = js/script.js
+
 regions[content] = Содержимое

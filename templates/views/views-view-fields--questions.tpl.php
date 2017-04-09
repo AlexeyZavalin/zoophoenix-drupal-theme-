@@ -25,15 +25,21 @@
  */
 ?>
 
-<div class="s-item">
-	<div class="si-title">
-		<h1 class="title_block"><?php print $fields['title']->content; ?></h1>
+<div class="q-item">
+	<div class="row">
+		<div class="col-md-1">
+			<div class="qi-user_name"><?php print $fields['field_question_user_name']->content; ?></div>
+		</div>
+		<div class="col-md-11">
+			<div class="qi-asked"><?php print $fields['field_question_asked']->content; ?></div>
+		</div>
 	</div>
-	<div class="si-desc">
-		<?php print $fields['body']->content; ?>
-	</div>
-	<div class="si-buttons">
-		<a href="#modal" class="button">Заказать</a>
-		<a href="<?php print $fields['path']->content; ?>" class="link-more">Подробнее</a>
+	<div class="row">
+		<div class="col-md-1">
+			<div class="qi-label">Ответ: </div>
+		</div>
+		<div class="col-md-11">
+			<div class="qi-answer"><?php print $fields['field_question_answer']->content; ?></div>
+		</div>
 	</div>
 </div>

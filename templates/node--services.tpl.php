@@ -113,7 +113,7 @@ $accessories_service_img_display = array(
 	$block_build = _block_get_renderable_array ($block);
 	echo drupal_render ($block_build);
 	?>
-	<section class="operating-procedure">
+	<section class="operating-procedure block">
 		<h1 class="title_block">
 			Порядок работы
 		</h1>
@@ -124,6 +124,7 @@ $accessories_service_img_display = array(
 	</section>
 	<div class="row">
 		<div class="col-md-4">
+			<h2 class="title_block">Заказ</h2>
 			<?php
 			$block = module_invoke ('webform', 'block_view', 'client-block-10');
 			echo render ($block['content']);
